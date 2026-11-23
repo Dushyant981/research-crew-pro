@@ -112,6 +112,7 @@ const agents = {
 
 // ---------- App + auth ----------
 const app = express();
+app.set('trust proxy', 1); // Render runs the app behind a proxy
 app.use(express.json({ limit: '10kb' }));
 
 const sign = (user) => jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: '7d' });
