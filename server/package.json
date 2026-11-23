@@ -1,0 +1,14 @@
+{
+  "name": "research-crew-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": { "dev": "node --watch --dns-result-order=ipv4first index.js","start": "node index.js" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.0"
+  }
+}
